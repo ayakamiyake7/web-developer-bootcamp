@@ -61,3 +61,29 @@ switch (day) {
   default:
     console.log("DONT KNOW THAT!");
 }
+
+//177 pop/push
+let movieLine = ["Tom", "Nancy"];
+movieLine.push("Billy");
+movieLine.pop();
+console.log(movieLine);
+
+//179
+console.log(movieLine.reverse());
+
+//180 splice
+const colours = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet",
+];
+console.log(colours.splice(5, 1));
+console.log(colours.splice(1, 0, "dark orange"));
+console.log(colours.splice(4, 0, "light green", "dark green"));
+
+const numbersSort = [2, 225, 664, 6, 100];
+console.log(numbersSort.sort((a, b) => b - a));
